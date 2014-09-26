@@ -1,10 +1,10 @@
-<VI_Package_Builder_Settings Version="0.6" Created_Date="2014-07-25 17:27:35" Modified_Date="2014-08-01 11:36:27" Creator="Daniel" Comments="" ID="80e1938cff82613d16f47451946224c8">
+<VI_Package_Builder_Settings Version="0.6" Created_Date="2014-07-25 17:27:35" Modified_Date="2014-09-26 10:41:38" Creator="Daniel" Comments="" ID="9028e7e8722eabbcf4395c120485616d">
   <Library_General_Settings>
     <Package_File_Name>ni_lib_tdms_editnode</Package_File_Name>
-    <Library_Version>1.0.0.18</Library_Version>
+    <Library_Version>1.1.0.19</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
-    <Library_Output_Folder>..\..\package releases\TDMS\editor</Library_Output_Folder>
+    <Library_Output_Folder>..\..\..\releases\modules\tdms</Library_Output_Folder>
     <Company_Name>National Instruments</Company_Name>
     <Library_Summary/>
     <Library_License>BSD 2-clause</Library_License>
@@ -35,7 +35,7 @@
       <Copyright/>
       <Packager>NI Systems Engineering</Packager>
       <URL/>
-      <Release_Notes>Added support for more user events.</Release_Notes>
+      <Release_Notes/>
     </Description>
     <Destinations>
       <Toolkit_VIs>
