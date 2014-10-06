@@ -1,10 +1,10 @@
-<VI_Package_Builder_Settings Version="0.6" Created_Date="2014-07-22 21:58:31" Modified_Date="2014-08-01 11:36:11" Creator="Daniel" Comments="" ID="e1e9a917c1005dbb25c93bc8a9e0f2f8">
+<VI_Package_Builder_Settings Version="0.6" Created_Date="2014-07-22 21:58:31" Modified_Date="2014-09-29 15:33:09" Creator="Daniel" Comments="" ID="79a1071448ece7e2104b57ef2227867e">
   <Library_General_Settings>
     <Package_File_Name>ni_lib_tdms_tbm</Package_File_Name>
-    <Library_Version>1.0.0.16</Library_Version>
+    <Library_Version>1.0.1.17</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
-    <Library_Output_Folder>..\..\package releases\TDMS\module</Library_Output_Folder>
+    <Library_Output_Folder>..\..\..\releases\modules\tdms</Library_Output_Folder>
     <Company_Name>National Instruments</Company_Name>
     <Library_Summary/>
     <Library_License>BSD 2-clause</Library_License>
@@ -34,7 +34,7 @@
       <Copyright/>
       <Packager>NI Systems Engineering</Packager>
       <URL/>
-      <Release_Notes>added build project</Release_Notes>
+      <Release_Notes>replaced notifier with rt fifo to remove memory allocation</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
