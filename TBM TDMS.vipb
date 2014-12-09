@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="0.6" Created_Date="2014-07-22 21:58:31" Modified_Date="2014-12-08 22:08:28" Creator="Daniel" Comments="" ID="35075584679e5f92696ba1d6d0017930">
+<VI_Package_Builder_Settings Version="0.6" Created_Date="2014-07-22 21:58:31" Modified_Date="2014-12-09 17:26:17" Creator="Daniel" Comments="" ID="7f3c72903f3067aa52560f3a2e1add3e">
   <Library_General_Settings>
     <Package_File_Name>ni_lib_tbm_tdms</Package_File_Name>
-    <Library_Version>2.0.1.3</Library_Version>
+    <Library_Version>2.0.2.4</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>..\releases\modules\tdms</Library_Output_Folder>
