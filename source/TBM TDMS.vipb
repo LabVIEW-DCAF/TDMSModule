@@ -1,10 +1,10 @@
-<VI_Package_Builder_Settings Version="0.6" Created_Date="2014-07-22 21:58:31" Modified_Date="2015-01-13 17:16:21" Creator="Daniel" Comments="" ID="e7b50953da08e8a2326276efe3cd4008">
+<VI_Package_Builder_Settings Version="0.6" Created_Date="2014-07-22 21:58:31" Modified_Date="2015-01-14 14:44:52" Creator="Daniel" Comments="" ID="ff09624b32d13d355ac5b679af320ceb">
   <Library_General_Settings>
     <Package_File_Name>ni_lib_tbm_tdms</Package_File_Name>
     <Library_Version>2.0.3.5</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
-    <Library_Output_Folder>..\releases\modules\tdms</Library_Output_Folder>
+    <Library_Output_Folder>..\..\releases\modules\tdms</Library_Output_Folder>
     <Company_Name>National Instruments</Company_Name>
     <Library_Summary/>
     <Library_License>NI Sample Code License</Library_License>
@@ -139,15 +139,6 @@
       </Exclusions>
       <Exclusions>
         <Path>module/TDMS runtime build.lvproj</Path>
-      </Exclusions>
-      <Exclusions>
-        <Path>.gitignore</Path>
-      </Exclusions>
-      <Exclusions>
-        <Path>LICENSE.txt</Path>
-      </Exclusions>
-      <Exclusions>
-        <Path>README.md</Path>
       </Exclusions>
       <Exclusions>
         <Path>TBM TDMS.lvproj</Path>
