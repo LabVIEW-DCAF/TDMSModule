@@ -8,4 +8,7 @@
 <nierror code="538400">
 A timeout occurred when attempting to move data from the module interface to the background TDMS writer. Try increasing the queue size or reducing the quantity of data to write.
 </nierror>
+<nierror code="538401">
+The background process aborted for an unknown reason.
+</nierror>
 </nidocument>
