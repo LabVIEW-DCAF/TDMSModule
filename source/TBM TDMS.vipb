@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="0.6" Created_Date="2014-07-22 21:58:31" Modified_Date="2016-07-25 22:08:40" Creator="Daniel" Comments="" ID="820cb6bee78434ed4c7c426cd2e9e898">
+<VI_Package_Builder_Settings Version="0.6" Created_Date="2014-07-22 21:58:31" Modified_Date="2017-02-08 10:15:27" Creator="Daniel" Comments="" ID="c68b2298aa31f7a4ef396b8127977d96">
   <Library_General_Settings>
     <Package_File_Name>ni_lib_dcaf_tdms</Package_File_Name>
-    <Library_Version>2.0.3.5</Library_Version>
+    <Library_Version>2.0.4.5</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>..\..\releases\modules\tdms</Library_Output_Folder>
@@ -36,7 +36,7 @@
       <Copyright/>
       <Packager>NI Systems Engineering</Packager>
       <URL/>
-      <Release_Notes>Initial release of combined TDMS module for CEF 2.0</Release_Notes>
+      <Release_Notes>Added string input for Linux paths (rather than Windows path control)</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
