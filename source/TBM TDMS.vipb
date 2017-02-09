@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="0.6" Created_Date="2014-07-22 21:58:31" Modified_Date="2017-02-08 10:56:29" Creator="Daniel" Comments="" ID="96442788c194f7604ea7bb5e5a44a849">
+<VI_Package_Builder_Settings Version="0.6" Created_Date="2014-07-22 21:58:31" Modified_Date="2017-02-08 15:47:52" Creator="Daniel" Comments="" ID="665b5ef816c935e000d42e3548a197cc">
   <Library_General_Settings>
     <Package_File_Name>ni_lib_dcaf_tdms</Package_File_Name>
-    <Library_Version>2.0.4.7</Library_Version>
+    <Library_Version>2.0.4.9</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>..\..\releases\modules\tdms</Library_Output_Folder>
