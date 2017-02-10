@@ -4,14 +4,57 @@
 	<Property Name="NI.Lib.SourceVersion" Type="Int">318799872</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
-	<Item Name="channel operation tests.vi" Type="VI" URL="../channel operation tests.vi"/>
-	<Item Name="create test channels.vi" Type="VI" URL="../create test channels.vi"/>
-	<Item Name="example test.vi" Type="VI" URL="../example test.vi"/>
-	<Item Name="init runtime test.vi" Type="VI" URL="../init runtime test.vi"/>
-	<Item Name="modify channel test.vi" Type="VI" URL="../modify channel test.vi"/>
-	<Item Name="rename channel test.vi" Type="VI" URL="../rename channel test.vi"/>
-	<Item Name="runtime io test.vi" Type="VI" URL="../runtime io test.vi"/>
-	<Item Name="serialization tests.vi" Type="VI" URL="../serialization tests.vi"/>
-	<Item Name="subscription test.vi" Type="VI" URL="../subscription test.vi"/>
-	<Item Name="tdms test.vi" Type="VI" URL="../tdms test.vi"/>
+	<Item Name="support" Type="Folder">
+		<Item Name="create test channels.vi" Type="VI" URL="../create test channels.vi"/>
+	</Item>
+	<Item Name="test definitions" Type="Folder">
+		<Property Name="NI.SortType" Type="Int">0</Property>
+		<Item Name="channel operation tests.lvtest" Type="TestItem" URL="../channel operation tests.lvtest">
+			<Property Name="utf.test.bind" Type="Str">tdms logger tests.lvlib:channel operation tests.vi</Property>
+			<Property Name="utf.vector.test.bind" Type="Str">42581F77-DA81-A1D2-4A6F-D7BB8A5C2C00</Property>
+		</Item>
+		<Item Name="example test.lvtest" Type="TestItem" URL="../example test.lvtest">
+			<Property Name="utf.test.bind" Type="Str">tdms logger tests.lvlib:example test.vi</Property>
+			<Property Name="utf.vector.test.bind" Type="Str">647A894D-8499-D9AA-3A1C-97BB876A6788</Property>
+		</Item>
+		<Item Name="init runtime test.lvtest" Type="TestItem" URL="../init runtime test.lvtest">
+			<Property Name="utf.test.bind" Type="Str">tdms logger tests.lvlib:init runtime test.vi</Property>
+			<Property Name="utf.vector.test.bind" Type="Str">BDA8A2C8-4257-1229-2FC4-32B3426D4BE2</Property>
+		</Item>
+		<Item Name="modify channel test.lvtest" Type="TestItem" URL="../modify channel test.lvtest">
+			<Property Name="utf.test.bind" Type="Str">tdms logger tests.lvlib:modify channel test.vi</Property>
+			<Property Name="utf.vector.test.bind" Type="Str">E89DD540-11D0-2115-22F0-04EDD913DE9E</Property>
+		</Item>
+		<Item Name="rename channel test.lvtest" Type="TestItem" URL="../rename channel test.lvtest">
+			<Property Name="utf.test.bind" Type="Str">tdms logger tests.lvlib:rename channel test.vi</Property>
+			<Property Name="utf.vector.test.bind" Type="Str">97FE7F1D-321C-8E90-66F7-27ADFD7AC6BF</Property>
+		</Item>
+		<Item Name="runtime io test.lvtest" Type="TestItem" URL="../runtime io test.lvtest">
+			<Property Name="utf.test.bind" Type="Str">tdms logger tests.lvlib:runtime io test.vi</Property>
+			<Property Name="utf.vector.test.bind" Type="Str">8ECB7DA8-E9FB-E209-588C-7435E6B4FE16</Property>
+		</Item>
+		<Item Name="serialization tests.lvtest" Type="TestItem" URL="../serialization tests.lvtest">
+			<Property Name="utf.test.bind" Type="Str">tdms logger tests.lvlib:serialization tests.vi</Property>
+			<Property Name="utf.vector.test.bind" Type="Str">DEDCE875-B77E-585E-948F-5397AE8729E4</Property>
+		</Item>
+		<Item Name="subscription test.lvtest" Type="TestItem" URL="../subscription test.lvtest">
+			<Property Name="utf.test.bind" Type="Str">tdms logger tests.lvlib:subscription test.vi</Property>
+			<Property Name="utf.vector.test.bind" Type="Str">00EA232F-F800-E896-0FD8-6C992A03BFD3</Property>
+		</Item>
+		<Item Name="tdms test.lvtest" Type="TestItem" URL="../tdms test.lvtest">
+			<Property Name="utf.test.bind" Type="Str">tdms logger tests.lvlib:tdms test.vi</Property>
+			<Property Name="utf.vector.test.bind" Type="Str">DD1D2540-11A5-0DB0-08D3-F55CF1DF6666</Property>
+		</Item>
+	</Item>
+	<Item Name="test vis" Type="Folder">
+		<Item Name="channel operation tests.vi" Type="VI" URL="../channel operation tests.vi"/>
+		<Item Name="example test.vi" Type="VI" URL="../example test.vi"/>
+		<Item Name="init runtime test.vi" Type="VI" URL="../init runtime test.vi"/>
+		<Item Name="modify channel test.vi" Type="VI" URL="../modify channel test.vi"/>
+		<Item Name="rename channel test.vi" Type="VI" URL="../rename channel test.vi"/>
+		<Item Name="runtime io test.vi" Type="VI" URL="../runtime io test.vi"/>
+		<Item Name="serialization tests.vi" Type="VI" URL="../serialization tests.vi"/>
+		<Item Name="subscription test.vi" Type="VI" URL="../subscription test.vi"/>
+		<Item Name="tdms test.vi" Type="VI" URL="../tdms test.vi"/>
+	</Item>
 </Library>
