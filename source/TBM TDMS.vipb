@@ -1,4 +1,4 @@
-<VI_Package_Builder_Settings Version="0.6" Created_Date="2014-07-22 21:58:31" Modified_Date="2017-02-09 14:48:05" Creator="Daniel" Comments="" ID="a08b6a2e30382391124be2543d7490b2">
+<VI_Package_Builder_Settings Version="0.6" Created_Date="2014-07-22 21:58:31" Modified_Date="2017-02-13 16:57:33" Creator="Daniel" Comments="" ID="b797c406d9a36bb33109d5b3a77d89ce">
   <Library_General_Settings>
     <Package_File_Name>ni_lib_dcaf_tdms</Package_File_Name>
     <Library_Version>2.0.4.11</Library_Version>
@@ -18,6 +18,7 @@
   <Advanced_Settings>
     <Package_Dependencies>
       <Additional_External_Dependencies>ni_frmwk_dcaf_core &gt;=1.0.0.5</Additional_External_Dependencies>
+      <Additional_External_Dependencies>ni_lib_logrotate &gt;=1.0.0.18</Additional_External_Dependencies>
       <Package_Conflicts>ni_lib_tdms_editnode &gt;=1.0.0.17</Package_Conflicts>
       <Package_Conflicts>ni_lib_tdms_tbm &gt;=1.0.0.15</Package_Conflicts>
     </Package_Dependencies>
@@ -36,7 +37,9 @@
       <Copyright/>
       <Packager>NI Systems Engineering</Packager>
       <URL/>
-      <Release_Notes>Added string input for Linux paths (rather than Windows path control)</Release_Notes>
+      <Release_Notes>Added string input for Linux paths (rather than Windows path control)
+Added logrotate functionality
+-Adds NI Logrotate package depedency</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
