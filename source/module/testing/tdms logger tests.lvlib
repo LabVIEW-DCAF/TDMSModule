@@ -11,39 +11,39 @@
 		<Property Name="NI.SortType" Type="Int">0</Property>
 		<Item Name="channel operation tests.lvtest" Type="TestItem" URL="../channel operation tests.lvtest">
 			<Property Name="utf.test.bind" Type="Str">tdms logger tests.lvlib:channel operation tests.vi</Property>
-			<Property Name="utf.vector.test.bind" Type="Str">42581F77-DA81-A1D2-4A6F-D7BB8A5C2C00</Property>
+			<Property Name="utf.vector.test.bind" Type="Str">E94D4B40-5B4B-2C0A-7368-5143235FF6EE</Property>
 		</Item>
 		<Item Name="example test.lvtest" Type="TestItem" URL="../example test.lvtest">
 			<Property Name="utf.test.bind" Type="Str">tdms logger tests.lvlib:example test.vi</Property>
-			<Property Name="utf.vector.test.bind" Type="Str">647A894D-8499-D9AA-3A1C-97BB876A6788</Property>
+			<Property Name="utf.vector.test.bind" Type="Str">94725119-830F-D6F6-8F25-AE96309C89DA</Property>
 		</Item>
 		<Item Name="init runtime test.lvtest" Type="TestItem" URL="../init runtime test.lvtest">
 			<Property Name="utf.test.bind" Type="Str">tdms logger tests.lvlib:init runtime test.vi</Property>
-			<Property Name="utf.vector.test.bind" Type="Str">BDA8A2C8-4257-1229-2FC4-32B3426D4BE2</Property>
+			<Property Name="utf.vector.test.bind" Type="Str">A13C66F8-4860-8D25-B8E6-49C1714AB9DB</Property>
 		</Item>
 		<Item Name="modify channel test.lvtest" Type="TestItem" URL="../modify channel test.lvtest">
 			<Property Name="utf.test.bind" Type="Str">tdms logger tests.lvlib:modify channel test.vi</Property>
-			<Property Name="utf.vector.test.bind" Type="Str">E89DD540-11D0-2115-22F0-04EDD913DE9E</Property>
+			<Property Name="utf.vector.test.bind" Type="Str">6B02DD9E-36C8-C940-2D82-26068492DAA3</Property>
 		</Item>
 		<Item Name="rename channel test.lvtest" Type="TestItem" URL="../rename channel test.lvtest">
 			<Property Name="utf.test.bind" Type="Str">tdms logger tests.lvlib:rename channel test.vi</Property>
-			<Property Name="utf.vector.test.bind" Type="Str">97FE7F1D-321C-8E90-66F7-27ADFD7AC6BF</Property>
+			<Property Name="utf.vector.test.bind" Type="Str">BCC1204A-2E12-FB1D-BFD4-C988F197DEDC</Property>
 		</Item>
 		<Item Name="runtime io test.lvtest" Type="TestItem" URL="../runtime io test.lvtest">
 			<Property Name="utf.test.bind" Type="Str">tdms logger tests.lvlib:runtime io test.vi</Property>
-			<Property Name="utf.vector.test.bind" Type="Str">8ECB7DA8-E9FB-E209-588C-7435E6B4FE16</Property>
+			<Property Name="utf.vector.test.bind" Type="Str">EDBFBFCE-86CD-0118-E0CF-F9AB9D92CAC9</Property>
 		</Item>
 		<Item Name="serialization tests.lvtest" Type="TestItem" URL="../serialization tests.lvtest">
 			<Property Name="utf.test.bind" Type="Str">tdms logger tests.lvlib:serialization tests.vi</Property>
-			<Property Name="utf.vector.test.bind" Type="Str">DEDCE875-B77E-585E-948F-5397AE8729E4</Property>
+			<Property Name="utf.vector.test.bind" Type="Str">75CFF3BA-6C7C-F3EA-C53B-B33806824EE8</Property>
 		</Item>
 		<Item Name="subscription test.lvtest" Type="TestItem" URL="../subscription test.lvtest">
 			<Property Name="utf.test.bind" Type="Str">tdms logger tests.lvlib:subscription test.vi</Property>
-			<Property Name="utf.vector.test.bind" Type="Str">00EA232F-F800-E896-0FD8-6C992A03BFD3</Property>
+			<Property Name="utf.vector.test.bind" Type="Str">8F632FB9-84B2-316C-97B9-F6A8F1A2B1F3</Property>
 		</Item>
 		<Item Name="tdms test.lvtest" Type="TestItem" URL="../tdms test.lvtest">
 			<Property Name="utf.test.bind" Type="Str">tdms logger tests.lvlib:tdms test.vi</Property>
-			<Property Name="utf.vector.test.bind" Type="Str">DD1D2540-11A5-0DB0-08D3-F55CF1DF6666</Property>
+			<Property Name="utf.vector.test.bind" Type="Str">994ECB4C-E685-3675-871F-4602B30B5A1A</Property>
 		</Item>
 	</Item>
 	<Item Name="test vis" Type="Folder">
