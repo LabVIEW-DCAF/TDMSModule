@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="0.6" Created_Date="2014-07-22 21:58:31" Modified_Date="2017-05-02 15:04:57" Creator="Daniel" Comments="" ID="a7ab9e5113c560f7ca5c32f282ae0cab">
+<VI_Package_Builder_Settings Version="0.6" Created_Date="2014-07-22 21:58:31" Modified_Date="2018-01-22 15:41:32" Creator="Daniel" Comments="" ID="8c0e37975ec3412ce1d54a01b5b0020b">
   <Library_General_Settings>
     <Package_File_Name>ni_lib_dcaf_tdms</Package_File_Name>
-    <Library_Version>2.1.0.12</Library_Version>
+    <Library_Version>2.1.1.12</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>..\..\releases\modules\tdms</Library_Output_Folder>
@@ -37,7 +37,9 @@
       <Copyright/>
       <Packager>NI Systems Engineering</Packager>
       <URL/>
-      <Release_Notes>Updated to LabVIEW 2014 and later</Release_Notes>
+      <Release_Notes>Updated to LabVIEW 2014 and later
+
+-Minor UI tweaks</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
