@@ -1,64 +1,81 @@
 # Overview
 
-This module contains a collection libraries and class implementations which provide a plugin for TDMS datalogging in the Distributed Control and Automation Framework (DCAF).
+The TDMS Logging module may be used to write DCAF tag data to a TDMS file on local disk which provides a useful mechanism to track critical system tags that may be used in monitoring of established applications, commissioning and certification of new deployments, system recovery, and troubleshooting.
 
-# Description
+The TDMS Logging module enqueues incoming tag data to be consumed by an asynchronous writing process to ensure the DCAF engine is not slowed down by the process of writing to disk.
 
-The TDMS Logging module may be used to write DCAF tag data to a TDMS file on local disk. Logging provides a useful mechanism to track critical system tags that may be used in monitoring of established applications, commissioning and certification of new deployments, system recovery, and troubleshooting.
-
-For evaluation of saved tag values, descriptive information such as the tag name and datatype are also saved. The [TDMS file format](http://www.ni.com/white-paper/3727/en/) provides a format that supports storage of data properties and streaming of data from multiple tags. The TDMS Logging module consolidates writes to disk and uses the [LabVIEW Advanced TDMS VIs and Functions](http://zone.ni.com/reference/en-XX/help/371361P-01/glang/tdms_advanced_functions/) for optimal efficiency when writing TDMS log files.
-
-![image001.png](https://ni.i.lithium.com/t5/image/serverpage/image-id/207413iED37EFD50CE9E83F/image-size/large?v=1.0&px=999 "image001.png")
-
-The TDMS Logging module implements a file management strategy using three user configurable rules:
-
-1. Generate a new log file when the current log is greater than or equal to **Maximum file size (kB)**
-
-2. Archive log files up to **Maximum number of archived files to keep** in a configurable directory.
-
-3. Delete log files with a *last modified* date older than **Maximum age of files (days)**
-
-Note: Archived logs are rotated such that the newest log has the lowest index (for example, “MyLog.1.tdms” is newer (more recent) than “MyLog.2.tdms”).
-
-Note: TDMS Logging module does not automatically archive existing log files. If a log file in the logging directory has the same name as the configured log **file name**, the existing file will be overwritten without warning.
+For additional information on the TDMS file format, read the [TDMS File Format Internal Structure](http://www.ni.com/white-paper/5696/en/) white paper.
 
 # Configuration of the TDMS Logging Module
 
-Using the DCAF Configuration Editor, you can add the TDMS Logging module to an engine by right-clicking the engine and selecting Add>>Utilities>>TDMS datalogger. The module automatically detects available tags:
+### Static Configuration
 
-![image003.png](https://ni.i.lithium.com/t5/image/serverpage/image-id/207414i449C8F9A6DC941A6/image-size/large?v=1.0&px=999 "image003.png")
+![StaticConfiguration](Documentation/Images/StaticConfiguration.png)
 
-Select the tags you want to log:
+**Available Tags:** Lists all tags within the current engine which are not already in the **Configured to Log** list. The TDMS Module only supports scalar data types so array tags will not be listed.
 
-![image005.png](https://ni.i.lithium.com/t5/image/serverpage/image-id/207415iAA91F9DEF85ADB82/image-size/large?v=1.0&px=999 "image005.png")
+Move tags into and out of the **Configured to Log** list by selecting individual items and clicking the add and remove buttons. Move all remaining tags into the **Configured to Log** list by clicking the add all button.
 
-Then, set datalogger configuration parameters:
+**Configured to Log:** A list of all engine tags whose values will be written to TDMS. All data will be written into the TDMS group `tdms writer <UID>` with a unique channel for each data type.
 
- ![image007.png](https://ni.i.lithium.com/t5/image/serverpage/image-id/207416i236BF2560B91DD94/image-size/large?v=1.0&px=999 "image007.png")
+### Datalogger Configuration
 
-By changing the scans per write and queue size you can balance the write-to-disk and memory performance of the TDMS Logging module.
+![DataloggerConfiguration](Documentation/Images/DataloggerConfiguration.png)
 
-Configure your data archival strategy in the ‘Log Rotation’ tab.
+**File Name:** Name of the TDMS file which tags will be actively written to.
 
-![image009.png](https://ni.i.lithium.com/t5/image/serverpage/image-id/207417iE01756F9A0CAF62F/image-size/large?v=1.0&px=999 "image009.png")
+**Log Directory:** Directory of the active TDMS file.
 
-Dynamic mappings can also be configured to log tags with names that match patterns specified in the ‘Dynamic Configuration’ tab. Use the syntax of the LabVIEW Match Pattern function to find matching tags when the module initializes at runtime.
+**Logging File Path:** The fully qualified file path of the active TDMS file. This item cannot be directly edited but instead will be generated based on the values of the **File Name** and **Log Directory** fields.
 
-![image011.png](https://ni.i.lithium.com/t5/image/serverpage/image-id/207418iBF0CE32B586E5CA3/image-size/large?v=1.0&px=999 "image011.png")
+**Scans Per Write:** The number of engine iterations between writes to the active TDMS file. The module will buffer tag data each engine iteration but will not write the buffered data to disk every iteration as to improve overall system performance.
 
-Remember to save your configuration.
+**Queue Size:** Size of the queue used by the asynchronous writer process to buffer data from the DCAF engine. If **Queue Size** is less than **Scans Per Write**, data will not be logged for every iteration of the engine.
 
-# Using the TDMS Logging Module
+**Approximate Memory Usage:** Calculated size of memory buffer (kB) required to hold the requested number of scans of the specified tags in memory between writes. This value ignores any tags that are dynamically mapped at runtime.
 
-The TDMS Logging Module does not read the TDMS log files, so it is likely that this module will be used with other code or utilities to evaluate and post process saved tag data. Archived logs and the active log can be viewed at any time, but National Instruments does not recommend moving, editing, or deleting these files while your application is running; instead, copy files to an independent storage location before making edits.
+**Use Enable Channel:** Gives user access to the **Enable Tag** within the DCAF engine. If this option is unchecked, the TDMS module will always attempt to write the latest values to disk. If the option is checked, the module will only write to the active TDMS file if the **Enable Tag** value in the DCAF engine is TRUE.
 
-For LabVIEW users, the TDMS File Viewer (found in the palettes at Functions>>Programming>>File I/O>>TDM Streaming>>TDMS File Viewer) can be used to quickly load and view the contents of any TDMS file. You can also write custom VIs to monitor the active log or manage archived logs, and NI LabVIEW DataFinder Toolkit users can create custom data management applications.
+**Enable Tag:** Displays the tag name within the DCAF engine tied to the specific TDMS module's enable property. If **Use Enable Channel** is checked, the TDMS module will only write to disk when the **Enable Tag** is TRUE.
 
-DIAdem also provides comprehensive data management and measurement analysis, and built-in DataFinder features may be used to find relevant data.
+The tag name cannot be edited and will always be `<Module_UID>_FMWK_TDMS_LOGGER_ENABLE`
 
-Use the [TDM Excel Add-In for Microsoft Excel](http://www.ni.com/example/27944/en/) to view TDMS files in Microsoft Excel.
+### Log Rotation
 
-Additionally, numerous other utilities for viewing and processing TDMS files are available on the [LabVIEW Tools Network](http://www.ni.com/labview-tools-network/).
+![LogRotation](Documentation/Images/LogRotation.png)
+
+**Maximum File Size:** Maximum file size (kB) of the active TDMS file. The active TDMS log will be renamed and placed in the archive directory and a new TDMS file will be created once active file size exceeds this amount.
+
+**Maximum Number of Archived Files to Keep:** When the amount of TDMS file in the archive directory exceeds this value, the oldest files are deleted until the maximum is no longer exceeded. Archived files receive a sequential identifier appendeded to the name before the file extension (`test.log` archives to `test.1.log`, `test.2.log`, up to `test.<max>.log`). As new archive files are created, the numbers are rotated such that the lowest number is always the most recent file. Files that have a different name pattern are ignored.
+
+>**Note**: TDMS Logging module does not automatically archive existing log files. If a log file in the logging directory has the same name as the configured log file name, the existing file will be overwritten without warning.
+
+**Archive Old Logs in Original Directory:** If checked, archived TDMS files will be saved to the **Log Directory**. If unchecked, archived TDMS files will instead be saved to the **Archive Directory**.
+
+**Archive Directory:** Directory on the local disk to which archived files are moved.
+
+**Maximum Age of Files (days):** Archived files older than the maximum age will be deleted, even if the number of archive files is less than the maximum. Archived files older than the **Maximum Age of files (days)** will only be deleted when the size of the active TDMS file exceeds the **Maximum File Size**.
+
+### Dynamic Configuration
+
+![DynamicConfiguration](Documentation/Images/DynamicConfiguration.png)
+
+**Enable Dynamic Mapping:** Checking this box enables the TDMS module to automatically log channels whose names match one of the patterns specified in the **Channel Subscription Pattern Matches** input.
+
+**Channel Subscription Pattern Matches:** Use the syntax of the LabVIEW Match Pattern primitive to find matching tags when the module initializes at runtime.
+
+>**Note:** Dynamic configuration attempts to match the names of Input and Processing Parameter channels of any other module within the engine. Channel names and the direction of those channels can be found in the Manual Mapping tab of the Mappings module.
+
+# Classified Errors
+
+The following errors are handled by the TDMS Module's classify errors function.
+
+Error Number | Description | Classification
+---|---|---
+1 - 10 | Generic file I/O errors. | Critical
+11 | Too many files open. | None (ignored by engine)
+538400 | A timeout occurred when attempting to move data from the module interface to the background TDMS writer. Try increasing the queue size or reducing the quantity of data to write.  | Recoverable
+538401 | The background process aborted for an unknown reason. | Critical
 
 # Software Requirements
 
