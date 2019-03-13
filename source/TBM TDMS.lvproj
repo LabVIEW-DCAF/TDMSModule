@@ -20,6 +20,7 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="Control Refs.ctl" Type="VI" URL="../editor/Control Refs.ctl"/>
 		<Item Name="TDMS datalogger configuration.lvclass" Type="LVClass" URL="../module/configuration/TDMS datalogger configuration.lvclass"/>
 		<Item Name="TDMS datalogger editor node.lvclass" Type="LVClass" URL="../editor/TDMS datalogger editor node.lvclass"/>
 		<Item Name="TDMS datalogger runtime.lvclass" Type="LVClass" URL="../module/execution/TDMS datalogger runtime.lvclass"/>
