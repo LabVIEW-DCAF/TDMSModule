@@ -12,43 +12,48 @@
 		<Property Name="NI.SortType" Type="Int">0</Property>
 		<Item Name="channel operation tests.lvtest" Type="TestItem" URL="../channel operation tests.lvtest">
 			<Property Name="utf.test.bind" Type="Str">tdms logger tests.lvlib:channel operation tests.vi</Property>
-			<Property Name="utf.vector.test.bind" Type="Str">12CBB344-C949-CFF5-8F45-587071521D2A</Property>
+			<Property Name="utf.vector.test.bind" Type="Str">935B77F1-EDA9-E73A-3D05-C518C3650324</Property>
 		</Item>
 		<Item Name="example test.lvtest" Type="TestItem" URL="../example test.lvtest">
 			<Property Name="utf.test.bind" Type="Str">tdms logger tests.lvlib:example test.vi</Property>
-			<Property Name="utf.vector.test.bind" Type="Str">6A993207-20B7-57D6-A511-710B627F3176</Property>
+			<Property Name="utf.vector.test.bind" Type="Str">FC8F5371-8E57-09D8-824D-4A767B7B4B26</Property>
 		</Item>
 		<Item Name="init runtime test.lvtest" Type="TestItem" URL="../init runtime test.lvtest">
 			<Property Name="utf.test.bind" Type="Str">tdms logger tests.lvlib:init runtime test.vi</Property>
-			<Property Name="utf.vector.test.bind" Type="Str">44D79346-CAF5-5172-6059-0403653D262B</Property>
+			<Property Name="utf.vector.test.bind" Type="Str">68396814-3F53-97D9-AC8D-0D5E44E2E36F</Property>
 		</Item>
 		<Item Name="modify channel test.lvtest" Type="TestItem" URL="../modify channel test.lvtest">
 			<Property Name="utf.test.bind" Type="Str">tdms logger tests.lvlib:modify channel test.vi</Property>
-			<Property Name="utf.vector.test.bind" Type="Str">118F1818-9569-FC94-CEA1-5C06D0679899</Property>
+			<Property Name="utf.vector.test.bind" Type="Str">2E5CDDB7-0B7B-18D7-B624-E19D9C13AED0</Property>
 		</Item>
 		<Item Name="rename channel test.lvtest" Type="TestItem" URL="../rename channel test.lvtest">
 			<Property Name="utf.test.bind" Type="Str">tdms logger tests.lvlib:rename channel test.vi</Property>
-			<Property Name="utf.vector.test.bind" Type="Str">D8043139-8BF9-A987-66BD-9CE6529D7655</Property>
+			<Property Name="utf.vector.test.bind" Type="Str">5BCF4B64-B27D-B1DF-62C1-3BE455A1EE71</Property>
 		</Item>
 		<Item Name="runtime io test.lvtest" Type="TestItem" URL="../runtime io test.lvtest">
 			<Property Name="utf.test.bind" Type="Str">tdms logger tests.lvlib:runtime io test.vi</Property>
-			<Property Name="utf.vector.test.bind" Type="Str">B9441022-E45A-227E-649A-A6B1E7A9539B</Property>
+			<Property Name="utf.vector.test.bind" Type="Str">C4913DD3-201E-C5CC-1A77-45BCE9EE4EFE</Property>
 		</Item>
 		<Item Name="serialization tests.lvtest" Type="TestItem" URL="../serialization tests.lvtest">
 			<Property Name="utf.test.bind" Type="Str">tdms logger tests.lvlib:serialization tests.vi</Property>
-			<Property Name="utf.vector.test.bind" Type="Str">708982F7-102D-819F-E94C-902C21F610D4</Property>
+			<Property Name="utf.vector.test.bind" Type="Str">DA22FF6B-1F4C-DF8F-4B34-55B60D3EC3C7</Property>
 		</Item>
 		<Item Name="subscription test.lvtest" Type="TestItem" URL="../subscription test.lvtest">
 			<Property Name="utf.test.bind" Type="Str">tdms logger tests.lvlib:subscription test.vi</Property>
-			<Property Name="utf.vector.test.bind" Type="Str">E41B9E32-D3B8-3F15-F0FB-D55AF6E15435</Property>
+			<Property Name="utf.vector.test.bind" Type="Str">341DFB05-AC5A-C095-B914-AA5F194B346E</Property>
+		</Item>
+		<Item Name="config crosslink test.lvtest" Type="TestItem" URL="../config crosslink test.lvtest">
+			<Property Name="utf.test.bind" Type="Str">tdms logger tests.lvlib:config crosslink test.vi</Property>
+			<Property Name="utf.vector.test.bind" Type="Str">C166BD4F-B9C0-B7AA-3C3A-DFEE126504D7</Property>
 		</Item>
 		<Item Name="tdms test.lvtest" Type="TestItem" URL="../tdms test.lvtest">
 			<Property Name="utf.test.bind" Type="Str">tdms logger tests.lvlib:tdms test.vi</Property>
-			<Property Name="utf.vector.test.bind" Type="Str">9338ECFB-C0E5-C201-27E6-22843FD044BB</Property>
+			<Property Name="utf.vector.test.bind" Type="Str">1855DC97-9F8E-7AB0-7B1C-B06F755AEAC3</Property>
 		</Item>
 	</Item>
 	<Item Name="test vis" Type="Folder">
 		<Item Name="channel operation tests.vi" Type="VI" URL="../channel operation tests.vi"/>
+		<Item Name="config crosslink test.vi" Type="VI" URL="../config crosslink test.vi"/>
 		<Item Name="example test.vi" Type="VI" URL="../example test.vi"/>
 		<Item Name="init runtime test.vi" Type="VI" URL="../init runtime test.vi"/>
 		<Item Name="modify channel test.vi" Type="VI" URL="../modify channel test.vi"/>
