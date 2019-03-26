@@ -108,14 +108,23 @@
 			<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 			<Property Name="NI.ClassItem.State" Type="Int">1107825168</Property>
 		</Item>
-		<Item Name="Line Configuration Dialog.vi" Type="VI" URL="../Line Configuration Dialog.vi">
-			<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!(&lt;!!!!%1!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!$%!B"X.V9W.F=X-!$%!B"W.I97ZH:71!*E"Q!"Y!!"546%*.)'.I97ZO:7QO&lt;(:D&lt;'&amp;T=Q!(9WBB&lt;GZF&lt;!!/1&amp;!!!1!'"%RJ&lt;G5!!"*!-0````])&gt;'&amp;H)'ZB&lt;75!!"*!5!!#!!A!"A&gt;$&lt;(6T&gt;'6S!"*!1!!"`````Q!*"%VB=(-!!"B!5!!#!!=!#AR.98"Q;7ZH=S"P&gt;81!!!1!!!!71&amp;!!!Q!!!!%!!ABF=H*P=C"J&lt;A!!1%"Q!"Y!!"Y=:7ZH;7ZF)'.P&lt;G:J:X6S982J&lt;WYO&lt;(:D&lt;'&amp;T=Q!!&amp;W6O:WFO:3"D&lt;WZG;7&gt;V=G&amp;U;7^O)'FO!%Z!=!!?!!!H*62%46-A:'&amp;U97RP:W&gt;F=C"D&lt;WZG;7&gt;V=G&amp;U;7^O,GRW9WRB=X-!(62%46-A:'&amp;U97RP:W&gt;F=C"D&lt;WZG;7&gt;V=G&amp;U;7^O!&amp;1!]!!-!!-!"!!&amp;!!M!$!!-!!Q!$!!.!!Y!$Q!(!Q!!?!!!#1!!!!E!!!!*!!!!#1!!!!!!!!!!!!!!!!!!!!!!!!!+!!!!#A!!!!I!!!!)!!!!!!%!%!!!!!!</Property>
+		<Item Name="initialize file property tag list.vi" Type="VI" URL="../initialize file property tag list.vi">
+			<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!'?!!!!%1!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!#U!$!!6797RV:1!/1$$`````"'ZB&lt;75!!"B!1!!"`````Q!&amp;#EFU:7UA4G&amp;N:8-!!!1!!!!71&amp;!!!Q!!!!%!!ABF=H*P=C"J&lt;A!!*E"Q!"Y!!"546%*.)'.I97ZO:7QO&lt;(:D&lt;'&amp;T=Q!(9WBB&lt;GZF&lt;!!/1&amp;!!!1!*"%RJ&lt;G5!!"*!-0````])&gt;'&amp;H)'ZB&lt;75!!"*!5!!#!!M!#1&gt;$&lt;(6T&gt;'6S!"*!1!!"`````Q!-"%VB=(-!!""!5!!#!!I!$12-;7ZF!!"!1(!!(A!!(BRF&lt;G&gt;J&lt;G5A9W^O:GFH&gt;8*B&gt;'FP&lt;CZM&gt;G.M98.T!!!8:7ZH;7ZF)'.P&lt;G:J:X6S982J&lt;WYA;7Y!6!$Q!!Q!!Q!%!!9!"Q!(!!=!"Q!(!!A!"Q!/!!]$!!"Y!!!.#!!!#1!!!!E!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!I!!!!!!!!!#!!!!!I!!!!!!1!1!!!!!!</Property>
 			<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-			<Property Name="NI.ClassItem.Flags" Type="Int">1073742080</Property>
+			<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
 			<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
 			<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 			<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-			<Property Name="NI.ClassItem.State" Type="Int">1107825168</Property>
+			<Property Name="NI.ClassItem.State" Type="Int">1074536976</Property>
+		</Item>
+		<Item Name="Line Configuration Dialog.vi" Type="VI" URL="../Line Configuration Dialog.vi">
+			<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!(&lt;!!!!%1!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!$%!B"X.V9W.F=X-!$%!B"W.I97ZH:71!*E"Q!"Y!!"546%*.)'.I97ZO:7QO&lt;(:D&lt;'&amp;T=Q!(9WBB&lt;GZF&lt;!!/1&amp;!!!1!'"%RJ&lt;G5!!"*!-0````])&gt;'&amp;H)'ZB&lt;75!!"*!5!!#!!A!"A&gt;$&lt;(6T&gt;'6S!"*!1!!"`````Q!*"%VB=(-!!"B!5!!#!!=!#AR.98"Q;7ZH=S"P&gt;81!!!1!!!!71&amp;!!!Q!!!!%!!ABF=H*P=C"J&lt;A!!1%"Q!"Y!!"Y=:7ZH;7ZF)'.P&lt;G:J:X6S982J&lt;WYO&lt;(:D&lt;'&amp;T=Q!!&amp;W6O:WFO:3"D&lt;WZG;7&gt;V=G&amp;U;7^O)'FO!%Z!=!!?!!!H*62%46-A:'&amp;U97RP:W&gt;F=C"D&lt;WZG;7&gt;V=G&amp;U;7^O,GRW9WRB=X-!(62%46-A:'&amp;U97RP:W&gt;F=C"D&lt;WZG;7&gt;V=G&amp;U;7^O!&amp;1!]!!-!!-!"!!&amp;!!M!$!!-!!Q!$!!.!!Y!$Q!(!Q!!?!!!#1!!!!E!!!!*!!!!#1!!!!!!!!!!!!!!!!!!!!!!!!!+!!!!#A!!!!A!!!!)!!!!!!%!%!!!!!!</Property>
+			<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+			<Property Name="NI.ClassItem.Flags" Type="Int">33088</Property>
+			<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
+			<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+			<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+			<Property Name="NI.ClassItem.State" Type="Int">1082143248</Property>
 		</Item>
 		<Item Name="Local Error Handler.vi" Type="VI" URL="../Local Error Handler.vi">
 			<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!$.!!!!#1!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!!Z!)1B4&gt;'^Q)'^V&gt;!!!&amp;E"1!!-!!!!"!!)):8*S&lt;X)A;7Y!!!R!)1&gt;4&gt;'^Q)'FO!&amp;1!]!!-!!-!"!!%!!5!"!!%!!1!"!!'!!1!"!!(!Q!!?!!!$1A!!!!!!!!!!!!!$1M!!!!!!!!!!!!!!!!!!!!!!!!+!!!!!!!!!!!!!!!)!!!!!!%!#!!!!!!</Property>
