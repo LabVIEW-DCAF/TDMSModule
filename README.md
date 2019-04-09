@@ -16,7 +16,7 @@ For additional information on the TDMS file format, read the [TDMS File Format I
 
 Move tags into and out of the **Configured to Log** list by selecting individual items and clicking the add and remove buttons. Move all remaining tags into the **Configured to Log** list by clicking the add all button.
 
-**Configured to Log:** A list of all engine tags whose values will be written to TDMS. All data will be written into the TDMS group `tdms writer <UID>` with a unique channel for each data type.
+**Configured to Log:** A list of all engine tags whose values will be written to TDMS.
 
 ### Datalogger Configuration
 
@@ -66,6 +66,28 @@ The tag name cannot be edited and will always be `<Module_UID>_FMWK_TDMS_LOGGER_
 
 >**Note:** Dynamic configuration attempts to match the names of Input and Processing Parameter channels of any other module within the engine. Channel names and the direction of those channels can be found in the Manual Mapping tab of the Mappings module.
 
+### Groups
+
+![Groups](Documentation/Images/Groups.png)
+
+**Add Group Name:** Enter a group name in this field and press the **+** button to add to the **Groups** list.
+
+**Available Logged Tags:** Lists the tags configured in the **Static Configuration** tab available to be assigned to a group.  Assign a tag to a group by highlighting the tag and group and pressing the **Add to Group** button.
+
+**Groups:** List of all groups and tags assigned to those groups.  Remove a tag from a group by selecting the tag and pressing the **Remove from Group** button.  Remove a group and all tags assigned to that group by selecting the group and pressing the **-** button.
+
+### File Properties
+
+![File Properties](Documentation/Images/FileProperties.png)
+
+**Property Name:** The name of the File Property to write to the TDMS file.
+	
+**Tag:** The DCAF tag which the File Property channel will be mapped to.
+
+Add and remove **File Properties** and **Tag** mappings with the **+**, **-**, and **File Properties Settings** buttons.
+
+>**Note:** Only string type tags will be listed as options in the Configuration Dialog for File Properties.
+
 # Classified Errors
 
 The following errors are handled by the TDMS Module's classify errors function.
@@ -79,4 +101,4 @@ Error Number | Description | Classification
 
 # Software Requirements
 
-+ LabVIEW 2014 or later
++ LabVIEW 2015 or later
